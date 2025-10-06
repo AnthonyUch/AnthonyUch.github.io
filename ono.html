@@ -3,11 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Anthony Uch | Portfolio</title>
-  <!-- Bootstrap CSS -->
+  <title>FPS Prototype | Anthony Uch</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
+      font-family: "Poppins", sans-serif;
+      background-color: #f9fafb;
+    }
+    .navbar {
+      background-color: #ffffff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .content {
+      padding: 60px 0;
+    }
+    .project-image {
+      border-radius: 12px;
+      width: 100%;
+      height: auto;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #f1f5f9;
+      color: #475569;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 40px;
+    }
+     body {
       font-family: "Poppins", sans-serif;
       background-color: #f9fafb;
     }
@@ -108,91 +131,30 @@
   </div>
 </nav>
 
-<!-- Hero Section -->
-<section class="hero">
+<!-- Project Content -->
+<section class="content">
   <div class="container">
-    <h1>Hi, I’m Anthony</h1>
-    <p>I build games, web apps, and mobile projects.<br>
-       Here are a few of my featured works.</p>
-  </div>
-</section>
-
-<!-- Top 3 Projects Section -->
-<section id="projects" class="py-5">
-  <div class="container">
-    <h2 class="text-center mb-4">Featured Projects</h2>
-    <div class="row g-4">
-      <!-- Project 1 -->
-      <div class="col-md-4">
-        <div class="card">
-          <img src="img/hordeology_1.png" class="card-img-top" alt="Project 1">
-          <div class="card-body">
-            <h5 class="card-title">Hordeology</h5>
-            <p class="card-text">A first-person shooter prototype built in Unity, featuring physics-based movement, enemy AI, and item pickups.</p>
-            <a href="hordeology.html" class="btn btn-outline-primary btn-sm">View Project</a>
-          </div>
-        </div>
-      </div>
-      <!-- Project 2 -->
-      <div class="col-md-4">
-        <div class="card">
-          <img src="img/ono_1.png" class="card-img-top" alt="Project 2">
-          <div class="card-body">
-            <h5 class="card-title">oNo</h5>
-            <p class="card-text">A 2D platformer with scripted cutscenes, storytelling, and handmade assets inspired by games like Limbo and Inside.</p>
-            <a href="ono.html" class="btn btn-outline-primary btn-sm">View Project</a>
-          </div>
-        </div>
-      </div>
-      <!-- Project 3 -->
-      <div class="col-md-4">
-        <div class="card">
-          <img src="img/modularmayhem_1.png" class="card-img-top" alt="Project 3">
-          <div class="card-body">
-            <h5 class="card-title">Modular Mayhem</h5>
-            <p class="card-text">A first-person shooter that borrows elements of survivors-like games. Features a procedurally generated maze that expands in real time.</p>
-            <a href="modularmayhem.html" class="btn btn-outline-primary btn-sm">View Project</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- About Section -->
-<section id="about" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center mb-4">About Me</h2>
+    <h1 class="text-center mb-4">oNo</h1>
     <div class="row justify-content-center">
       <div class="col-md-8 text-center">
-        <p>I’m a developer who enjoys bringing fun and interesting ideas to life.  
-        My focus is on game development, but I also work on web and mobile apps.  </p>
+        <img src="img/ono_1.png" alt="oNo" class="project-image mb-4">
+        <p class="lead">
+          A 2D platformer with scripted cutscenes, storytelling, and handmade assets inspired by games like Limbo.
+        </p>
+        <a href="https://drive.google.com/file/d/1h8lRsogXEdF2dLPw6-uIngTEowSANUrR/view?usp=sharing" class="btn btn-primary btn-lg mt-3" download>Download Project</a>
+        <br><br>
+        <a href="index.html" class="btn btn-outline-secondary mt-2">Back to Home</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Contact Section -->
-<section id="contact" class="py-5">
-  <div class="container">
-    <h2 class="text-center mb-4">Get In Touch</h2>
-    <div class="row justify-content-center">
-      <div class="col-md-6 text-center">
-        <p>If you’d like to contact me about games, game development, or work.</p>
-        <a href="mailto:anthonyuch@live.com" class="btn btn-primary">Email Me</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Footer -->
 <footer>
   <div class="container">
     <p>&copy; 2025 Anthony Uch</p>
   </div>
 </footer>
 
-<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
