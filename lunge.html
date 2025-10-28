@@ -3,34 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>oNo | Anthony Uch</title>
+  <title>Lunge.ai Website Redesign | Anthony Uch</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
-      font-family: "Poppins", sans-serif;
-      background-color: #f9fafb;
-    }
-    .navbar {
-      background-color: #ffffff;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-    .content {
-      padding: 60px 0;
-    }
-    .project-image {
-      border-radius: 12px;
-      width: 100%;
-      height: auto;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    footer {
-      background: #f1f5f9;
-      color: #475569;
-      padding: 20px 0;
-      text-align: center;
-      margin-top: 40px;
-    }
-     body {
       font-family: "Poppins", sans-serif;
       background-color: #f9fafb;
     }
@@ -42,35 +18,32 @@
       font-weight: 600;
       color: #0f172a !important;
     }
-    .hero {
-      background: #eef6ff;
-      padding: 80px 0;
+    .content {
+      padding: 60px 0;
+    }
+    .compare-container {
+      display: flex;
+      flex-direction: column; /* Stack vertically */
+      align-items: center;
+      gap: 40px; /* Space between images */
+    }
+    .compare-box {
       text-align: center;
     }
-    .hero h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      color: #0f172a;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      margin-top: 15px;
-      color: #475569;
-    }
-    .card {
-      border: none;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    .compare-box img {
+      border-radius: 12px;
+      width: auto;   /* Let image keep its original width */
+      height: auto;  /* Keep original height */
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       transition: transform 0.2s ease;
     }
-    .card:hover {
-      transform: translateY(-5px);
+    .compare-box img:hover {
+      transform: scale(1.02);
     }
-    .card img {
-      border-top-left-radius: 16px;
-      border-top-right-radius: 16px;
-      height: 180px;
-      object-fit: cover;
+    .compare-caption {
+      margin-top: 10px;
+      font-weight: 500;
+      color: #475569;
     }
     footer {
       background: #f1f5f9;
@@ -95,7 +68,6 @@
 
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        
         <!-- Game Projects Dropdown -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="gameDropdown" role="button" 
@@ -133,19 +105,27 @@
 
 <!-- Project Content -->
 <section class="content">
-  <div class="container">
-    <h1 class="text-center mb-4">oNo</h1>
-    <div class="row justify-content-center">
-      <div class="col-md-8 text-center">
-        <img src="img/ono_1.png" alt="oNo" class="project-image mb-4">
-        <p class="lead">
-          A 2D platformer with scripted cutscenes, storytelling, and handmade assets inspired by games like Limbo.
-        </p>
-        <a href="https://drive.google.com/file/d/1h8lRsogXEdF2dLPw6-uIngTEowSANUrR/view?usp=sharing" class="btn btn-primary btn-lg mt-3" download>Download Project</a>
-        <br><br>
-        <a href="index.html" class="btn btn-outline-secondary mt-2">Back to Home</a>
+  <div class="container text-center">
+    <h1 class="mb-4">Lunge.ai Website Redesign</h1>
+    <p class="lead mb-5">
+      Redesigned and developed a dynamic website for clients at Lunge Systems, implementing full-stack functionality with PHP and a responsive frontend design. Updated features to efficiently search, retrieve, and display data from a SQLite database, providing users with an interactive and seamless experience. Designed and integrated a secure user authentication system with encrypted passwords to ensure data integrity and user security. Below is a showcase of the website before and after the redesign.
+    </p>
+
+    <div class="compare-container">
+      <!-- Before -->
+      <div class="compare-box">
+        <img src="img/lunge_before.png" alt="Before Image">
+        <p class="compare-caption">Before</p>
+      </div>
+
+      <!-- After -->
+      <div class="compare-box">
+        <img src="img/lunge_after.png" alt="After Image">
+        <p class="compare-caption">After</p>
       </div>
     </div>
+
+    <a href="index.html" class="btn btn-outline-secondary mt-4">Back to Home</a>
   </div>
 </section>
 
